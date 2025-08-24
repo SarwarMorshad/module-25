@@ -8,11 +8,22 @@
   <body>
     <button onclick="console.log('I am Clicked');">Click Me</button>
     <button onclick="makeYellow()">Make Yellow</button>
+    <br />
+    <button id="btn-make-blue">Make blue</button>
+    <br />
+    <button id="btn-make-green">Green</button>
+    <br />
+    <button id="btn-make-gold">Gold</button>
 
     <script>
       function makeYellow() {
         document.body.style.backgroundColor = "yellow";
       }
+
+      const btnMakeBlue = document.getElementById("btn-make-blue");
+      btnMakeBlue.onclick = function () {
+        document.body.style.backgroundColor = "blue";
+      };
     </script>
     <script src="script/main.js"></script>
   </body>
